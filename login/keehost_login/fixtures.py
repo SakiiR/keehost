@@ -12,7 +12,7 @@ def create_super_admin():
     if r.status_code == 422:
         print("Super admin already exists")
     elif r.status_code == 201:
-        print("Super admin created !")
+        print("Super admin created ! %s" % r.json())
     else:
         print("Uknown error when creating super admin: %s" % r.json())
 

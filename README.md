@@ -1,6 +1,6 @@
 # KeeHost
 
-A Self Hosted Password Handler API
+A Self Hosted Password Manager API
 
 ## Introduction
 

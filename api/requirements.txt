@@ -1,1 +1,2 @@
 Eve==0.7.4
+coloredlogs==7.3

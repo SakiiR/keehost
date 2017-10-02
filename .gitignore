@@ -1,0 +1,7 @@
+/config
+api/keehost_core/config/config.py
+login/keehost_login/config/config.py
+__pycache__/
+.ropeproject/
+volumes/
+*.swp

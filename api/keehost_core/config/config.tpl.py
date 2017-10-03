@@ -5,6 +5,7 @@ MONGO_HOST = 'localhost'
 MONGO_PORT = 27017
 MONGO_DBNAME = 'keehost'
 MONGO_URI = "mongodb://{host}:{port}/{dbname}".format(host=MONGO_HOST,
+                                                      port=MONGO_PORT,
                                                       dbname=MONGO_DBNAME)
 
 # The adress to bind to
@@ -88,7 +89,6 @@ DOMAIN = {
             'icon': {
                 'type': 'media',
                 'required': False,
-                'nullable': True,
                 'default': None
             }
         }
@@ -101,9 +101,13 @@ DOMAIN = {
         'schema': {
             'name': {
                 'type': 'string',
-                'requird': True
+                'required': True
             },
             'value': {
+                'type': 'string',
+                'required': True
+            },
+            'key': {
                 'type': 'string',
                 'required': True
             },
@@ -113,7 +117,8 @@ DOMAIN = {
             },
             'icon': {
                 'type': 'media',
-                'required': False
+                'required': False,
+                'default': None
             },
             'group': {
                 'type': 'objectid',
@@ -124,5 +129,5 @@ DOMAIN = {
                 }
             },
         }
-    }
+    },
 }

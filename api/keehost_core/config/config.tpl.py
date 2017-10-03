@@ -89,6 +89,7 @@ DOMAIN = {
             'icon': {
                 'type': 'media',
                 'required': False,
+                'nullable': True,
                 'default': None
             }
         }
@@ -118,6 +119,7 @@ DOMAIN = {
             'icon': {
                 'type': 'media',
                 'required': False,
+                'nullable': True,
                 'default': None
             },
             'group': {
